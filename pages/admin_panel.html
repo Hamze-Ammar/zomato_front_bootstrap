@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up</title>
+    
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css/styles.css">
 </head>
@@ -102,31 +104,19 @@
                 <h1 class="h2">Dashboard</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                   <div class="btn-group mr-2">
-                    <button class="btn btn-sm btn-outline-secondary">Display Users</button>
+                    <button id="displayUsers" class="btn btn-sm btn-outline-secondary">Display Users</button>
                     <button id="displayRestos" class="btn btn-sm btn-outline-secondary">Display Restaurants</button>
-                    <button class="btn btn-sm btn-outline-secondary">Display Reviews</button>
+                    <button id="displayReviews" class="btn btn-sm btn-outline-secondary">Display Reviews</button>
                   </div>
                 </div>
               </div>
     
               <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
     
-              <h2>Restaurants</h2>
-              <div class="table-responsive">
-                <table class="table table-striped table-sm">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>name</th>
-                      <th>description</th>
-                      <th>address</th>
-                      <th>created At</th>
-                    </tr>
-                  </thead>
-                  <tbody id="table">
-                  </tbody>
-                </table>
-              </div>
+              <h2 id="title-table"></h2>
+                <div class="table-responsive" id="table-main">
+                    
+                </div>
             </main>
           </div>
         </div>

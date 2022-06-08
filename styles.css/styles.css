@@ -36,3 +36,17 @@ a {
     justify-items: center;
     align-items: center;
 }
+
+
+.table-responsive i {
+    padding-left: 5px;
+    margin-left:  5px;
+    color: #1877f2;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.table-responsive i:hover {
+    color:#96a4d5 ;
+    font-size: larger;
+}
