@@ -18,10 +18,33 @@ $("#submit").click(function(e){
     headers: {"Content-type": "application/json; charset=UTF-8"}
     })
     .then(response => response.json()) 
-    .then(json => console.log(json))
+    .then(json =>  handleResponse(json))
     .catch(err => console.log(err));
 
 })
+
+function handleResponse(json){
+    console.log(json);
+    console.log("---");
+    let msg = json.msg;
+    let type = json.type;
+    //alert(msg);
+    if (msg=="You are now logged in!"){
+        if (type==1){
+            //redirect admin
+            alert("redirecting admin")
+            window.location.replace("../pages/admin_panel.html");
+            return
+        }
+        //redirect user to home page
+        alert(msg);
+        window.location.replace("../index.html");
+    }else{
+        alert(msg);
+    }
+    //console.log(json.type);
+
+}
 
 
 
