@@ -1,0 +1,38 @@
+* {
+    margin: 0, 30px;
+    
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+.head {
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inline {
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.main-main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 400px;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
